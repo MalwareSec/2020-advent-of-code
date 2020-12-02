@@ -43,7 +43,7 @@ def testspeed(part: str) -> float:
             'stmt': '''process_list_three_sum(inputList, 2020)'''
         }
     }
-    reps = timeit.repeat(repeat = 10,
+    reps = timeit.repeat(repeat = 1000,
                          number = 1,
                          stmt=test_map[part]["stmt"],
                          setup=test_map[part]["setup"])
